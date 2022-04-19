@@ -27,7 +27,7 @@ const char* SPEAKER_NO = "1";
 # インストール
 
 ## Voicevox
- Ubuntuの場合、インストーラーではなくtar.gz版をダウンロードして解凍してください。解答した後、フォルダに移動して下記のようにIPアドレスを指定してVoicevoxエンジンを起動します。
+ Ubuntuの場合、インストーラーではなくtar.gz版をダウンロードして解凍してください。解凍した後、フォルダに移動して下記のようにIPアドレスを指定してVoicevoxエンジンを起動します。
  
  ※ IPアドレスを指定しないと127.0.0.1で起動するのでM5Stackからアクセスできません。
 
@@ -42,8 +42,14 @@ const char* SPEAKER_NO = "1";
 ### 例
 
  src -> M5Unified_Voicevox_TTS
- 
+
  main.cpp -> M5Unified_Voicecox_TTS
+
+### 必要なライブラリ
+詳しい情報はplatformio.iniを参照してください。
+- [M5Unified](https://github.com/m5stack/M5Unified)
+- [ESP8266Audio](https://github.com/earlephilhower/ESP8266Audio)
+- [UrlEncode](https://github.com/plageoj/urlencode)
 
 # 参考（引用）
 - [ESP8266Audio](https://github.com/earlephilhower/ESP8266Audio)のサンプル(StreamMP3FromHTTP)
